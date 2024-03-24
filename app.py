@@ -9,5 +9,5 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://adopt"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = 'False'
 
 connect_db(app)
-db.createall()
+db.create_all()
 
