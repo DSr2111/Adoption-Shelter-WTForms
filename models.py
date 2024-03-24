@@ -21,3 +21,9 @@ class Pet(db.model):
         """Getting assigned picture or generic one for pet"""
 
         return self.photo_url or GENERIC_IMAGE
+
+def connect_db(app):
+    """Connect database to app"""
+
+    db.app = app
+    db.init_app(app)
